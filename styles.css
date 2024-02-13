@@ -1,34 +1,41 @@
-body, html {
-    font-family: Arial, sans-serif;
+/* Reset styles */
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
-    background-image: url('flower2.jpg'); /* Set flower.jpg as the background image */
-    background-size: cover;
+    box-sizing: border-box;
   }
   
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('flower4.jpg'); /* Replace 'flower_background.jpg' with the actual path to your flower background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Container styles */
   .container {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center; /* Align container vertically and horizontally */
+    align-items: center;
   }
   
+  /* Background video styles */
   .background {
     position: relative;
-    width: 80%; /* Adjust width of the container */
-    max-width: 800px; /* Limit maximum width */
+    width: 100%;
   }
   
   .video {
     width: 100%;
     display: block;
-    margin: 0 auto;
     border-radius: 10px;
   }
   
+  /* Overlay styles */
   .overlay {
     position: absolute;
     top: 50%;
@@ -48,5 +55,20 @@ body, html {
     color: #ffffff;
     font-size: 1.2em;
     margin-top: 10px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .overlay {
+      padding: 0 20px;
+    }
+  
+    .overlay h1 {
+      font-size: 1.5em;
+    }
+  
+    .overlay p {
+      font-size: 1em;
+    }
   }
   
