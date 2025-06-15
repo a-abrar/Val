@@ -14,6 +14,6 @@ document.getElementById("noBtn").addEventListener("click", function() {
   
   
   document.getElementById("yesBtn").addEventListener("click", function() {
-    window.location.href = "valentine.html";
+    window.location.href = "pyaari.html";
   });
   
